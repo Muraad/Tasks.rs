@@ -7,6 +7,9 @@
 # VisualRust project user file
 *.user
 
+# Cargo .lock file
+*.lock
+
 # Executables
 *.exe
 
