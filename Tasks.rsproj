@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">CargoBuild</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>42493825-07ff-42fd-94b5-9733854e1fab</ProjectGuid>
+    <OutputType>library</OutputType>
+    <Name>Tasks</Name>
+    <RootNamespace>Tasks</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>target\debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>target\release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="examples\" />
+    <Folder Include="tests\" />
+    <Folder Include="benches\" />
+    <None Include="src\lib.rs" />
+    <None Include="Cargo.toml" />
+  </ItemGroup>
+  <ItemGroup>
+    <File Include="benches\benchmark.rs" />
+    <File Include="examples\scoped_example.rs" />
+    <File Include="examples\task_examples.rs" />
+    <File Include="src\task.rs" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Build|AnyCPU'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Run|AnyCPU'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Bench|AnyCPU'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Update|AnyCPU'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Clean|AnyCPU'" />
+  <Import Project="$(MSBuildExtensionsPath)\VisualRust\VisualRust.Cargo.targets">
+  </Import>
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

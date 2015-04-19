@@ -1,0 +1,11 @@
+[package]
+name = "tasks"
+version = "0.0.1"
+authors = ["Muraad Nofal <muraad.nofal@gmail.com>"]
+
+[dependencies]
+lazy_static = "*"
+
+[dependencies.threadpool]
+version = "*"
+features = ["scoped-pool"]
