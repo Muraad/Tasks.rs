@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition="'$(Configuration)' == ''">CargoBuild</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>42493825-07ff-42fd-94b5-9733854e1fab</ProjectGuid>
+    <ProjectGuid>186b0f40-e7c5-4331-af9e-e2c59562598c</ProjectGuid>
     <OutputType>library</OutputType>
     <Name>Tasks</Name>
     <RootNamespace>Tasks</RootNamespace>
@@ -19,14 +19,13 @@
     <Folder Include="examples\" />
     <Folder Include="tests\" />
     <Folder Include="benches\" />
-    <None Include="src\lib.rs" />
     <None Include="Cargo.toml" />
   </ItemGroup>
   <ItemGroup>
     <File Include="benches\benchmark.rs" />
     <File Include="examples\scoped_example.rs" />
     <File Include="examples\task_examples.rs" />
-    <File Include="src\task.rs" />
+    <File Include="src\lib.rs" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Build|AnyCPU'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Run|AnyCPU'" />
