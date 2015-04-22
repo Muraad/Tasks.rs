@@ -25,12 +25,6 @@ version = "*"
 features = ["scoped-pool"]
 ```
 
-Usage
-
-```rust
-extern crate tasks
-```
-
 ## Example
 
 ```rust
