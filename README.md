@@ -3,7 +3,7 @@ Simple, elegant task with continuitation and await
 
 ## Installation
 
-Currently only via github. Cargo coming soon...
+Currently only via github. Crates.io coming soon...
 
      git clone https://github.com/Muraad/Tasks.rs.git
 
