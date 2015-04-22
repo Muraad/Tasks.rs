@@ -10,7 +10,7 @@ Currently only via github. Cargo coming soon...
 or using Cargo.toml
 
 ```toml
-[dependencies.color]
+[dependencies.tasks]
 git = "https://github.com/Muraad/Tasks.rs"
 ```
 
